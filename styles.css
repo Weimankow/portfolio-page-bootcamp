@@ -1,3 +1,75 @@
+/*
+Design references:
+https://anngee.sg/
+https://www.drewscape.net/
+https://uxsea.org/summit-2019/index.php/sketchnotes/
+http://preview.themeforest.net/item/helium-modern-portfolio-blog-theme/full_screen_preview/9458672?_ga=2.133849867.446301260.1662478452-489466040.1662478452
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
+  font-family: sans-serif;
+  color: #222222;
+}
+
+/* #nav-div {
+  position: fixed;
+}
+*/
+
+nav {
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid;
+  border-color: #c0c0c0;
+  overflow: hidden;
+  display: block;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222222;
+  float: left;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 25px;
+  /* I tried to use box-sizing: border-box in nav{} but it didn't work, so I had to use this trick of hiding the border in the bg-color to maintain the box height on hover. :( */
+  border-bottom: 2px solid;
+  border-color: white;
+}
+
+nav a:hover {
+  border-color: #222222;
+}
+
+h1 {
+  clear: both;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+#content {
+  margin-left: 40px;
+  margin-top: 40px;
+  height: 1500px;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: lightgreen;
+  }
 }
